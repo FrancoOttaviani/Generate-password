@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Claves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Password Generator</h3>
+    <div class="card">
+        <form class="form-floating">
+            <input type="text" value="Generando pass..." id="pantalla" disabled>
+        </form>
+        <div class="generador">
+            <div id = "cantCaracteres"></div>
+            <label for="" >Cantidad de Caracteres</label>
+                <input type="range" min="0" max="20" step="1" id="range">
+            <label for="Mayusculas">Mayusculas</label>
+                <input type="checkbox" name="" id="mayusculas">
+            <label for="">Minusculas</label>
+                <input type="checkbox" name="" id="minusculas"> 
+            <label for="">Numeros</label>
+                <input type="checkbox" name="" id="numeros">
+            <label for="">Caracteres Especiales</label>
+                <input type="checkbox" name="" id="carEspeciales">
+                  
+            <button id="boton">GENERAR --></button>   
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
