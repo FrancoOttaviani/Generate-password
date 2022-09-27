@@ -15,6 +15,7 @@ let pantalla = document.getElementById("pantalla")
 
 checkMin.addEventListener("change", function(){
     min = checkMin.checked;
+
 })
 
 checkMay.addEventListener("change", function(){
@@ -29,12 +30,12 @@ checkEsp.addEventListener("change", function(){
     esp = checkEsp.checked;    
 })
 
-
-cantCaracteres.innerHTML = range.value;
-
 range.addEventListener("change", function(){
     cantCaracteres.innerHTML = range.value; 
 })
+
+
+cantCaracteres.innerHTML = range.value;
 
 
 
@@ -80,3 +81,8 @@ function generarContraseña (rango) {
 boton.addEventListener("click", function(){
     pantalla.value = generarContraseña(range.value)
 })
+
+function fuerza (){
+    let fuerza = "|   |   "
+
+}

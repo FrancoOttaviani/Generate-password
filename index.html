@@ -9,25 +9,46 @@
 </head>
 <body>
     <h3>Password Generator</h3>
-    <input type="text" value="Generando pass..." id="pantalla" disabled>
+    <div class="contenedor">
+        <div class="card">
+            <input type="text" value="Generando pass..." id="pantalla" disabled>
+        </div><br>
+        
+        <div class="card">    
+                <div class="opcion">
+                    <label for="" >Cantidad de Caracteres:</label>        <span id = "cantCaracteres"></span>
+                    
+                </div>
+                <div class="opcion">
     
-    <div class="card">    
-        <div class="generador">
-            
-            <label for="" >Cantidad de Caracteres <span id = "cantCaracteres"></span></label>
-            <input type="range" min="0" max="20" step="1" id="range">
-            
-            <label for="Mayusculas">Mayusculas </label>
-            <input type="checkbox" name="" id="mayusculas">
+                    <input type="range" min="0" max="20" step="1" id="range">
+                </div>
+    
+                <div class="opcion">
+                    <input type="checkbox" class= "checkbox" id="mayusculas"><label>Incluir Mayusculas </label>
+                    
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" class= "checkbox" id="minusculas"> <label for="">Incluir  Minusculas</label>
+                    
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" class= "checkbox" id="numeros"><label>Incluir Numeros</label>
+                    
+                </div>
                 
-            <label for="">Minusculas</label>
-                <input type="checkbox" name="" id="minusculas"> 
-            <label for="">Numeros</label>
-                <input type="checkbox" name="" id="numeros">
-            <label for="">Caracteres Especiales</label>
-                <input type="checkbox" name="" id="carEspeciales">
-                  
-            <button id="boton">GENERAR --></button>   
+                <div class="opcion">
+                    <input type="checkbox" class= "checkbox" id="carEspeciales"><label>Incluir Caracteres Especiales</label>
+    
+                </div>
+                <br><hr>
+                <div class="opcion fuerza">
+                    <p>Fuerza  </p><span>|   |   |</span>
+    
+                </div>
+                <br><hr>
+                    
+                <button id="boton">GENERAR --></button>   
         </div>
     </div>
     <script src="./main.js"></script>
