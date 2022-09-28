@@ -83,6 +83,6 @@ boton.addEventListener("click", function(){
 })
 
 function fuerza (){
-    let fuerza = "|   |   "
+    let fuerza = "|   |   |   |   |"
 
 }

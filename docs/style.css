@@ -14,7 +14,7 @@
     width: 35%;
 }
 
-h3{
+h2{
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -54,10 +54,6 @@ body{
     margin-bottom: 20px;
 }
 
-
-
-div.option.checkbox{
-    display: flex;
-    width: 500px;
-    align-items: center;
+.opciones{
+    display: inline;
 }
